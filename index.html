@@ -11,8 +11,8 @@
 <h1>Gestión de Alumnos - Pilates</h1>
 
 <div class="form">
-<input id="nombre" placeholder="Nombre del alumno">
-<input id="pago" type="number" placeholder="Pago">
+<input id="nombre" placeholder="Nombre del alumno" onkeypress="if(event.keyCode === 13) agregarAlumno()">
+<input id="pago" type="number" placeholder="Pago" onkeypress="if(event.keyCode === 13) agregarAlumno()">
 <button onclick="agregarAlumno()">Agregar</button>
 </div>
 
@@ -20,7 +20,7 @@
 <thead>
 <tr>
 <th>Alumno</th>
-<th>Pago</th>
+<th id="pagos-header">Pago</th>
 <th>Acción</th>
 </tr>
 </thead>
